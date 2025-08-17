@@ -132,7 +132,7 @@ export default function Home() {
                 {['Twitter(X)', 'WhatsApp', 'Instagram', 'LinkedIn', 'Facebook', 'Reddit', 'Discord', 'Pinterest', 'Snapchat', 'Youtube'].map((platform, index) => (
                   <span
                     key={platform}
-                    className={`text-sm ${selectedIntensity == index ? 'text-cyan-300 font-bold' : 'text-blue-300'}`}
+                    className={`md:text-sm text-[7px] ${selectedIntensity == index ? 'text-cyan-300 font-bold' : 'text-blue-300'}`}
                   >
                     {platform}
                   </span>
