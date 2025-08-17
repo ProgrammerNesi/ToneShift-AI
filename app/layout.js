@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Text Tweak",
+  title: "ToneShift AI",
   description: "Transform you text with AI",
 };
 

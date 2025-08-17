@@ -80,8 +80,8 @@ export default function Navbar() {
             </button>
 
             {/* GitHub */}
-            <a
-              href="#"
+            <Link
+              href={"https://github.com/ProgrammerNesi/ToneShift-AI"}
               className="text-blue-300 hover:text-cyan-200 transition-colors hidden md:inline"
               aria-label="GitHub"
             >
@@ -103,7 +103,7 @@ export default function Navbar() {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
 
