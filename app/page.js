@@ -7,7 +7,7 @@ import { useEffect } from "react";
 export default function Home() {
   const [text, setText] = useState("")
   const [selectedTone, setSelectedTone] = useState("")
-  const [selectedIntensity, setSelectedIntensity] = useState("")
+  const [selectedIntensity, setSelectedIntensity] = useState("2")
   const [isLoading, setIsLoading] = useState(false);
   const [result, setResult] = useState('');
   const [copyStatus, setCopyStatus] = useState('');
@@ -94,6 +94,8 @@ export default function Home() {
         <div className="flex flex-wrap gap-8 items-center justify-between mt-6">
           {/* Tone Dropdown */}
           <div className="relative flex-1 min-w-[200px]">
+            <p className="text-sm px-2 font-semibold text-left text-blue-300 mb-5">Select your desired tone and intensity:</p>
+            <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 rounded-lg blur-sm"></div>
             <select
               value={selectedTone}
@@ -107,7 +109,7 @@ export default function Home() {
               <option>Social Media</option>
             </select>
           </div>
-
+          </div>
           {/* Dynamic Range Slider */}
           {selectedTone === 'Social Media' ? (
             <div className="relative w-full my-4">
@@ -139,7 +141,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
-          ) : (
+          ) : (     
             <div className="relative w-full my-4">
               {/* Tone Intensity Slider */}
               <div className="absolute inset-0 h-1.5 mt-3 rounded-full bg-[#0d1b2a] border border-blue-400/10"></div>
