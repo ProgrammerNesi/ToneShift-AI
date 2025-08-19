@@ -18,7 +18,7 @@ export default function Home() {
       Generate();
       setTriggerGenerate(false);
     }
-  }, [triggerGenerate, text, selectedTone, selectedIntensity]);
+  }, [triggerGenerate, text]);
 
   const tones = ["Professional", "Casual", "Funny", "Academic"];
 
